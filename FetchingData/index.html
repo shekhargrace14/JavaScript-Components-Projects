@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <label for="numberOne" >Enter your 1st number</label>
+    <input type="text" id="numberOne" > <br><br>
+    <span id="error" > </span>
+
+    <label for="number2">Enter your 2nd number</label>
+    <input type="text" id="number2"> <br> <br>
+    <span id="error" > </span>
+    
+    <input type="submit" id="submit">
+
+    <p>OutPut : <span id="OutPut"></span> </p>
+ 
+    
+
+    <script>
+        // let OutPut = document.getElementById("Output");
+        let submit = document.getElementById("submit");
+        let numberOne = document.getElementById("numberOne");
+        let number2 = document.getElementById("number2");
+
+
+        submit.addEventListener("click", function(){
+            sumNum1 = numberOne.value 
+            sumNum2 = number2.value
+            sum = parseInt(sumNum1) + parseInt(sumNum2)
+         console.log(sumNum1);
+         console.log(sumNum2);
+         console.log(sum);
+
+       document.getElementById("OutPut").innerHTML = sum;
+
+        } )
+
+
+
+
+    </script>
+
+
+
+    <script>
+        // let a = prompt("please enter your 1st number");
+        // let b = prompt("please enter your 2nd number");       
+        // let sum = parseInt(a)+parseInt(b);
+        // console.log("The sum of the number is =", sum)
+        // document.write("The sum is",sum)
+
+    </script>
+
+</body>
+</html>
