@@ -8,21 +8,26 @@
 :root{
     --primary-color: #faedeb;
     --primary-color-light: #ecc6c0;
-    --bg-dark-primary: #000000;
-    --bg-light-primary: #fff;
-    --bg-dark-secondary: #121212;
+
+    --bg-color-dark-primary: #000000;
+    --bg-color-dark-secondary: #121212;
 
     --border-radius: 0.3rem;
 
-    --text-primary-color: #000;
-    --text-secondary-color: #737373;
+    --text-color-primary: #000;
+    --text-color-secondary: #737373;
+    --text-color-white: #fff;
 
-    --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Roboto', sans-serif;
+
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
 }
 
 body{
-    background-color: var(--bg-light-primary);
+    background-color: var(--bg-dark-primary);
 }
 
 /* global css starts here  */
@@ -63,29 +68,26 @@ button , .button{
 }
 
 h1, h2, h3, h4, h5, h6{
-    line-height: 2rem;
-    font-family: var(--font-primary);
+    line-height: 5rem;
+    font-family: var(--font-family-primary);
     font-weight: 400;
-    color: var(--text-primary-color);
+    color: var(--primary-color);
+    margin: .5rem 0;
 }
 h1{
-    font-size: 3rem;
-    line-height: 3.5rem;
-    
+    font-size: 4rem; 
 }
 h2{
     font-size: 3rem;
-    line-height: 3.5rem;
-    margin: 1rem 0;
+  
 }
 h3{
     font-size: 1.5rem;
-
   
 }
 h4{
     font-size: 18px;
-    margin: .5rem 0;
+
 }
 p{
     font-size: 13px;
@@ -105,9 +107,10 @@ input{
 }
 
 li{
-    font-family: var(--font-secondary);
-    list-style: none;
-    color: var(--text-secondary-color);
+    font-family: var(--font-family-secondary);
+    /* list-style: none; */
+    color: var(--text-color-secondary) ;
+    font-size: 1.6rem;
 }
 a{
     color: var(--text-secondary-color);
@@ -205,3 +208,19 @@ i{
     display: none;
 }
 /* global css ends here  */
+
+/* aside starts here */
+aside{
+    width: 30%;
+    min-height:100vh ;
+    background-color: var(--bg-color-dark-secondary);
+}
+/* aside ends here */
+/* main starts from  */
+main{
+    padding: 2rem;
+    width: 70%;
+    min-height: 100vh;
+    background-color: var(--bg-color-dark-primary);
+}
+/* main ends from  */
